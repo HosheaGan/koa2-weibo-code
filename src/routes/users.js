@@ -14,7 +14,8 @@ router.post('/login', async (ctx, next) => {
   const { userName, password } = ctx.request.body
   ctx.body = {
     userName,
-    password
+    password,
+    age: 21
   }
 })
 
